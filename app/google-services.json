@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "539862509602",
+    "project_id": "myapplication3-landf",
+    "storage_bucket": "myapplication3-landf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539862509602:android:7759b74b6bf387a07dc27b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvjQZKQQqI0WImq4FaCvWUKgHLALy6UBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ✅ Toolbar with Back Arrow -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPostItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:title="Post Item"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- ✅ The rest of your form inside a ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Item Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item Name" />
+
+            <!-- Place Found -->
+            <EditText
+                android:id="@+id/editTextPlaceFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place Found" />
+
+            <!-- Date/Time Found -->
+            <EditText
+                android:id="@+id/editTextTimeFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date/Time Found" />
+
+            <!-- Additional Description -->
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Additional Description"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+            <!-- Instruction Text -->
+            <TextView
+                android:id="@+id/textViewImageInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="📸 Take a photo or upload from gallery"
+                android:textSize="16sp" />
+
+            <!-- Add Photo Button -->
+            <Button
+                android:id="@+id/buttonPickImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="📷 Add Photo" />
+
+            <!-- Image Preview -->
+            <ImageView
+                android:id="@+id/imageViewPreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="#EEEEEE" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmitItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Submit" />
+
+            <!-- Status Text -->
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
