@@ -12,8 +12,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
-}
-// settings.gradle.kts
-rootProject.name = "MyApplication3"
 
+    versionCatalogs {
+        create("libs") {
+            from(files("gradle/libs.versions.toml"))
+        }
+    }
+}
+
+rootProject.name = "MyApplication"
 include(":app")

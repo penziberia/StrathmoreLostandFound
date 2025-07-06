@@ -24,8 +24,14 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.editTextEmail.text.toString().trim()
             val password = binding.editTextTextPassword.text.toString().trim()
 
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (email == "user@example.com" && password == "1234") {
-                val intent = Intent(this,HomeActivity::class.java)
+                Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

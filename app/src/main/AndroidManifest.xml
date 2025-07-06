@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- ✅ Permissions OUTSIDE <application> -->
+    <!-- Permissions OUTSIDE <application> -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -18,7 +18,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
 
-        <!-- ✅ Launcher Activity -->
+        <!--  Launcher Activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -28,16 +28,16 @@
             </intent-filter>
         </activity>
 
-        <!-- ✅ Home Screen -->
+        <!-- Home Screen -->
         <activity android:name=".HomeActivity" android:exported="true" />
 
-        <!-- ✅ Post Item Screen -->
+        <!-- Post Item Screen -->
         <activity android:name=".PostItemActivity" android:exported="true" />
 
-        <!-- ✅ Settings Screen -->
+        <!--  Settings Screen -->
         <activity android:name=".SettingsActivity" android:exported="true" />
 
-        <!-- ✅ Found Items Screen -->
+        <!-- Found Items Screen -->
         <activity android:name=".FoundItemsActivity" android:exported="true" />
 
     </application>

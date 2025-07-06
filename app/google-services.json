@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "539862509602",
-    "project_id": "myapplication3-landf",
-    "storage_bucket": "myapplication3-landf.firebasestorage.app"
+    "project_number": "426625648815",
+    "project_id": "comexamplemyapplication3",
+    "storage_bucket": "comexamplemyapplication3.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:539862509602:android:7759b74b6bf387a07dc27b",
+        "mobilesdk_app_id": "1:426625648815:android:71806b4fdea23b1d70ac5a",
         "android_client_info": {
           "package_name": "com.example.myapplication"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBvjQZKQQqI0WImq4FaCvWUKgHLALy6UBg"
+          "current_key": "AIzaSyBsIB3OJe0eRQMe0GUvNxCo9XqHN-8NTk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426625648815:android:2c8d50b76ddb7f8670ac5a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsIB3OJe0eRQMe0GUvNxCo9XqHN-8NTk0"
         }
       ],
       "services": {
